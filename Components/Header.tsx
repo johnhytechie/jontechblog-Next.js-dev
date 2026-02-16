@@ -8,11 +8,11 @@ const Header = () => {
       <div className="flex justify-between items-center">
         <Image 
           src={assets.bloglogo1}
-          alt="Blog logo"
+          alt=''
           width={180}
           className='w-[130px] sm:w-auto'
         />
-         <button className='flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_#000000]'>Get Started<Image src={assets.arrow} width={30} alt="arrow"/></button>
+         <button className='flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_#000000]'>Get Started<Image src={assets.arrow} width={20} alt=''/></button>
       </div>
       <div className='text-center my-8'>
         <h1 className='text-3xl sm:text-5xl font-medium'>Latest Blogs</h1>

@@ -46,10 +46,10 @@ export const assets = {
     instagram
 }
 
-export const Blog_data = [{
+export const blog_data = [{
     id:1,
     title: "A detailed step by step guide to manage your lifestyle",
-    description: "Lorem ipsum...",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt eveniet amet consequuntur! A expedita quo veniam neque eaque et, sequi quaerat fugiat natus esse exercitationem quibusdam quod? Nemo, repellat.",
     image:image12,
     date:Date.now(),
     category:"Lifestyle",
