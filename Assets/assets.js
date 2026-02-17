@@ -30,6 +30,23 @@ import dodgered from './dodgered.jpg';
 import image8 from './image8.jpg';
 import image4 from './image4.jpg';
 import email from './email.png';
+import dolphine2 from './dolphine2.jpg';
+import fashion1 from './fashion1.jpg';
+import galaxy from './galaxy.jpg';
+import game1 from './game1.jpg';
+import game2 from './game2.jpg';
+import benz2 from './benz2.jpg';
+import passport1 from './passport1.jpg';
+import nature from './nature.jpg';
+import nature3 from './nature3.jpg';
+import night from './night.jpg';
+import passport2 from './passport2.jpg';
+import passport3 from './passport3.jpg';
+import image15 from './image15.jpg';
+import rest1 from './rest1.jpg';
+import run from './run.jpg';
+import rest2 from './rest2.jpg';
+import virtual4 from './virtual4.jpg';
 
 export const assets = {
     facebook,
@@ -110,7 +127,7 @@ export const blog_data= [{
     id:7,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:dolphine2,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
@@ -120,7 +137,7 @@ export const blog_data= [{
     id:8,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:fashion1,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
@@ -130,7 +147,7 @@ export const blog_data= [{
     id:9,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:rest1,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
@@ -140,7 +157,7 @@ export const blog_data= [{
     id:10,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:run,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
@@ -150,7 +167,7 @@ export const blog_data= [{
     id:11,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:galaxy,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
@@ -160,7 +177,7 @@ export const blog_data= [{
     id:12,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:game4,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
@@ -170,7 +187,7 @@ export const blog_data= [{
     id:13,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:nature,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
@@ -180,7 +197,7 @@ export const blog_data= [{
     id:14,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:nature3,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
@@ -190,7 +207,7 @@ export const blog_data= [{
     id:15,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:dolphine3,
+    image:passport2,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
