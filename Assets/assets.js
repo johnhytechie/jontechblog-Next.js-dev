@@ -46,7 +46,7 @@ export const assets = {
     instagram
 }
 
-export const blog_data = [{
+export const blog_data= [{
     id:1,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt eveniet amet consequuntur! A expedita quo veniam neque eaque et, sequi quaerat fugiat natus esse exercitationem quibusdam quod? Nemo, repellat.",
@@ -108,6 +108,96 @@ export const blog_data = [{
 },
 {
     id:7,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:8,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:9,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:10,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:11,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:12,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:13,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:14,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:15,
+    title: "A detailed step by step guide to manage your lifestyle",
+    description: "Lorem ipsum...",
+    image:dolphine3,
+    date:Date.now(),
+    category:"Entertainment",
+    author:"Pat Chisom",
+    author_img: profileicon
+},
+{
+    id:16,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
     image:club2,
