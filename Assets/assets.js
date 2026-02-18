@@ -177,7 +177,7 @@ export const blog_data= [{
     id:12,
     title: "A detailed step by step guide to manage your lifestyle",
     description: "Lorem ipsum...",
-    image:game4,
+    image:virtual4,
     date:Date.now(),
     category:"Entertainment",
     author:"Pat Chisom",
