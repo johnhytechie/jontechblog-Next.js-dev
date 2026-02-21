@@ -27,7 +27,7 @@ import { blog_data } from '@/Assets/assets'
           })}
 
        </div>
-     </div>
+     </div> 
    )
  }
  
