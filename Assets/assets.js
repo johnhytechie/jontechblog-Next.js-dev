@@ -3,6 +3,7 @@ import profileicon from './profileicon.png';
 import add2 from './add2.png';
 import ai1 from './ai1.jpg';
 import ai2 from './ai2.jpg';
+import tekinoralogo from './tekinoralogo.png';
 import cancel from './cancel.png';
 import facebook from './facebook.png';
 import google from './google.png';
