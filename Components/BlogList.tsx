@@ -21,9 +21,9 @@ import { blog_data } from '@/Assets/assets'
         <button onClick={()=>setMenu('Sports')} className={menu==="Sports"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Sports</button>
         <button onClick={()=>setMenu('Travel')} className={menu==="Travel"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Travel</button>
        </div>
-       <div className='flex flex-wrap justify-around gap-1 gap-y-10 mg-16 xl:mx-24'>
+       <div className='flex flex-wrap justify-around gap-1 gap-y-10 my-16 xl:mx-24'>
           {blog_data.filter((item)=> menu==="All"?true:item.category===menu).map((item,index)=>{
-               return <BlogItem key={index} image={item.image} title={item.title} description={item.description} category={item.category}/>
+               return <BlogItem key={index} id={item.id} image={item.image} title={item.title} description={item.description} category={item.category}/>
           })}
 
        </div>
