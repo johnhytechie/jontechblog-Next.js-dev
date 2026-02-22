@@ -13,6 +13,7 @@ import image6 from './image6.jpg';
 import image12 from './image12.jpg';
 import wizkid from './wizkid.jpg';
 import x from './x.png';
+import x2 from './x2.png';
 import whatsapp from './whatsapp.png';
 import virtual5 from './virtual5.jpg';
 import surf2 from './surf2.jpg';
@@ -53,12 +54,13 @@ export const assets = {
     facebook,
     google,
     x,
+    whatsapp,
     email,
     upload1,
     cancel,
     add2,
     profileicon,
-    bloglogo1,
+    tekinoralogo,
     arrow,
     blogicon,
     instagram

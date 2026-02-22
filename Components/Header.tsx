@@ -7,7 +7,7 @@ const Header = () => {
     <div className="py-5 px-5 md:px-12 lg:px-28">
       <div className="flex justify-between items-center">
         <Image 
-          src={assets.bloglogo1}
+          src={assets.tekinoralogo}
           alt=''
           width={180}
           className='w-[130px] sm:w-auto'
