@@ -1,34 +1,49 @@
 'use client'
-import React from 'react'
-import React, { useEffect, useState  } from 'react'
 
-const page = ({params}) => {
+import React, { useEffect, useState, use } from 'react'
+import Image from 'next/image'
+import { assets, blog_data } from '@/Assets/assets'
 
-      const [data,setData] = useState(null);
+const Page = ({ params }: { params: Promise<{ id: string }> }) => {
 
-  const fetchBlogData = () =>{
-    for(let i=0;i<blog_data.length;i++)
-  {
-       if (Number(params.id)===blog_data[i].id) {
-         setData(blog_data[i]);
-         console.log(blog_data[i]);
-         break;
-       }
+  // Unwrap params Promise (Next.js 16 fix)
+  const { id } = use(params)
+
+  const [data, setData] = useState<any>(null);
+
+  useEffect(() => {
+
+    const fetchBlogData = () => {
+      for (let i = 0; i < blog_data.length; i++) {
+
+        if (Number(id) === blog_data[i].id) {
+          setData(blog_data[i]);
+          break;
+        }
+
+      }
     }
-}
-    useEffect(() =>{
-        fetchBlogData();
-    },[])
+
+    fetchBlogData();
+
+  }, [id])
+
+
+  if (!data) {
+    return <div className="p-10 text-xl">Loading...</div>
+  }
+
 
   return (
-     <div className='bg-gray-200 py-5 px-5 md:px-12 lg:px-28'>
+    <div className='bg-gray-200 py-5 px-5 md:px-12 lg:px-28'>
 
+      {/* Header */}
       <div className='flex justify-between items-center'>
 
         <Image
           src={assets.tekinoralogo}
           width={180}
-          alt=''
+          alt='logo'
           className='w-[130px] sm:w-auto'
         />
 
@@ -36,15 +51,24 @@ const page = ({params}) => {
 
           Get Started
 
-          <Image src={assets.arrow} alt='' width={12} height={12}/>
+          <Image
+            src={assets.arrow}
+            alt=''
+            width={12}
+            height={12}
+          />
 
         </button>
 
       </div>
 
+
+      {/* Blog Content */}
+       <div className='text-center my-24'>
       <h1 className="text-3xl font-bold mt-10">
         {data.title}
       </h1>
+      </div>
 
       <Image
         src={data.image}
@@ -62,4 +86,4 @@ const page = ({params}) => {
   )
 }
 
-export default page
+export default Page
