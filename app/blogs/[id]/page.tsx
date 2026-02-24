@@ -3,6 +3,8 @@
 import React, { useEffect, useState, use } from 'react'
 import Image from 'next/image'
 import { assets, blog_data } from '@/Assets/assets'
+import Footer from '@/Components/Footer'
+import Link from 'next/link'
 
 const Page = ({ params }: { params: Promise<{ id: string }> }) => {
 
@@ -39,12 +41,15 @@ const Page = ({ params }: { params: Promise<{ id: string }> }) => {
           {/* Header */}
       <div className='flex justify-between items-center'>
 
+        <Link href='/'>
+ 
         <Image
           src={assets.tekinoralogo}
           width={180}
           alt=''
           className='w-[130px] sm:w-auto'
         />
+        </Link>
          <button className='flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-red-500 shadow-[-7px_7px_0px_#880000]'>
           Get Started
           <Image
@@ -83,14 +88,16 @@ const Page = ({ params }: { params: Promise<{ id: string }> }) => {
           <div className='my-24'>
             <p className='text-black font font-semibold my-4'>Share this article on social media</p>
             <div className='flex'>
-              <Image src={assets.facebook} width={40} alt=''/>
-              <Image src={assets.instagram} width={40} alt=''/>
-              <Image src={assets.x} width={40} alt=''/>
-              <Image src={assets.whatsapp} width={40} alt=''/>
+              <Image src={assets.facebook} width={50} alt=''/>
+              <Image src={assets.instagram} width={50} alt=''/>
+              <Image src={assets.x} width={50} alt=''/>
+              <Image src={assets.whatsapp} width={50} alt=''/>
+              <Image src={assets.google} width={50} alt=''/>
 
             </div>
           </div>
          </div>
+       <Footer/>
       </>:<></>
     
   )
