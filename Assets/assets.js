@@ -14,6 +14,7 @@ import image12 from './image12.jpg';
 import wizkid from './wizkid.jpg';
 import x from './x.png';
 import x2 from './x2.png';
+import trisia from './trisia.jpg';
 import whatsapp from './whatsapp.png';
 import virtual5 from './virtual5.jpg';
 import surf2 from './surf2.jpg';
@@ -25,7 +26,6 @@ import arrow from './arrow.png';
 import blogicon from './blogicon.png';
 import dolphine3 from './dolphine3.jpg';
 import izzywhite from './izzywhite.jpg';
-import trisia1 from './trisia1.jpg';
 import strawberry from './strawberry.jpg';
 import club2 from './club2.jpg';
 import dodgered from './dodgered.jpg';
@@ -63,7 +63,8 @@ export const assets = {
     tekinoralogo,
     arrow,
     blogicon,
-    instagram
+    instagram,
+    trisia
 }
 
 export const blog_data= [{
