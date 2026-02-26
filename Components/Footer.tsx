@@ -9,15 +9,22 @@ const Footer = () => {
 
       <div className='flex justify-around flex-col gap-4 sm:flex-row items-center'>
 
-        {/* Logo */}
-        <Image src={assets.tekinoralogo} alt='' width={120} />
-
+         {/* Clickable Logo */}
+      <Link href="/">
+        <Image
+          src={assets.tekinoralogo}
+          alt="Tekinora Logo"
+          width={120}
+          className="cursor-pointer"
+        />
+      </Link>
+      
         {/* Footer Links */}
         <div className='flex gap-6 text-white text-sm'>
           <Link href="/about">About Us</Link>
           <Link href="/contact">Contact Us</Link>
           <Link href="/privacy-policy">Privacy Policy</Link>
-          <Link href="/terms">Terms & Conditions</Link>
+          <Link href="/terms">Terms / Disclaimer</Link>
         </div>
 
         {/* Social Icons */}
@@ -31,7 +38,7 @@ const Footer = () => {
       </div>
 
       <p className='text-sm text-white text-center mt-4'>
-        All rights reserved. Copyright @Tekinora
+        © 2026 Tekinora. All rights reserved.
       </p>
 
     </div>
