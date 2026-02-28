@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "app/blogs/page.tsx", "app/blogs/page.tsx", "app/page.jsx", "app/page.js", "app/page.js"  ],
+, "app/blogs/page.tsx", "app/blogs/page.tsx", "app/page.jsx", "app/page.js", "app/page.js", "lib/config/db.js"  ],
   "exclude": ["node_modules"]
 }
