@@ -6,13 +6,13 @@ import BlogModel from "@/lib/models/BlogModel";
 export const runtime = "nodejs";
 
 export async function GET() {
-  await connectDB();   // ✅ connect here
+  await connectDB();   // CONNECT HERE
   return NextResponse.json({ msg: "API Working" });
 }
 
 export async function POST(request) {
   try {
-    // ✅ VERY IMPORTANT
+    
     await connectDB();
 
     const formData = await request.formData();
