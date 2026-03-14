@@ -15,7 +15,7 @@ import { blog_data } from '@/Assets/assets'
         <button onClick={()=>setMenu('All')} className={menu==="All"? 'bg-black text-white py-1 px-4 rounded-sm':""}>All</button>
         <button onClick={()=>setMenu('Technology')} className={menu==="Technology"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Technology</button>
         <button onClick={()=>setMenu('Entertainment')} className={menu==="Entertainment"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Entertainment</button>
-        <button onClick={()=>setMenu('Lifestyle')} className={menu==="Lifestyle"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Lifestyle</button>
+        <button onClick={()=>setMenu('Viral')} className={menu==="Viral"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Viral</button>
         <button onClick={()=>setMenu('Business')} className={menu==="Business"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Business</button>
         <button onClick={()=>setMenu('Education')} className={menu==="Education"? 'bg-black text-white py-1 px-4 rounded-sm':""} >Education</button>
         <button onClick={()=>setMenu('Health')} className={menu==="Health"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Health</button>
