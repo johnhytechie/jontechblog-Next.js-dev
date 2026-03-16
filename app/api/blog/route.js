@@ -34,6 +34,7 @@ export async function POST(request) {
     await writeFile(path, buffer);
 
     const imgUrl = `/${timestamp}_${image.name}`;
+    console.log("Image URL:", imgUrl); // LOG IMAGE
 
     const blogData = {
       title: formData.get("title"),
@@ -45,6 +46,7 @@ export async function POST(request) {
     };
 
     await BlogModel.create(blogData);
+    console.log("Blog Saved")
 
     return NextResponse.json({
       success: true,

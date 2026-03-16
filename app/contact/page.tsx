@@ -21,7 +21,7 @@ const ContactPage = () => {
         <div className='flex flex-col sm:flex-row gap-8 items-center'>
 
           {/* Contact Text */}
-          <div>
+          <div className='text-center my-8'>
 
             <p className='mb-4 text-gray-700'>
               Have questions, suggestions, or business inquiries?

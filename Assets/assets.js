@@ -73,7 +73,7 @@ export const blog_data= [{
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt eveniet amet consequuntur! A expedita quo veniam neque eaque et, sequi quaerat fugiat natus esse exercitationem quibusdam quod? Nemo, repellat.",
     image:club2,
     date:Date.now(),
-    category:"Lifestyle",
+    category:"Viral",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -113,7 +113,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:ai2,
     date:Date.now(),
-    category:"Health",
+    category:"Technology",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -123,7 +123,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:dolphine3,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Business",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -133,7 +133,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:dolphine2,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Viral news",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -143,7 +143,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:fashion1,
     date:Date.now(),
-    category:"Sports",
+    category:"Viral news",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -153,7 +153,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:rest1,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Viral news",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -163,7 +163,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:run,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Education",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -173,7 +173,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:wizkid,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Health",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -183,7 +183,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:virtual4,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Viral news",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -193,7 +193,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:nature,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Business",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -203,7 +203,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:nature3,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Health",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -213,7 +213,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:image12,
     date:Date.now(),
-    category:"Entertainment",
+    category:"Health",
     author:"Pat Chisom",
     author_img: profileicon
 },
@@ -223,7 +223,7 @@ export const blog_data= [{
     description: "Lorem ipsum...",
     image:passport2,
     date:Date.now(),
-    category:"Travel",
+    category:"Health",
     author:"Pat Chisom",
     author_img: profileicon
 }]
