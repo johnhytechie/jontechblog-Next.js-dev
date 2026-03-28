@@ -1,13 +1,25 @@
 'use client'
 import { assets } from '@/Assets/assets';
 import Image from 'next/image'
-import React from 'react'
-import { useState } from "react";
+import React, { useState } from "react";
 
 const page = () => {
 
-     const [image,setImage] = useState(false)
+     const [image,setImage] = useState(false);
+     const [data,setData] = useState({
+      title:"",
+      description:"",
+      category:"Viral news",
+      author:"Patty Chi",
+      authorImg:"/author_img.png"
+     })
 
+     const onChangeHandler = (event) => {
+      const name = event.target.name;
+      const value =event.taget.vlaue;
+      setData(data=>({...data,[name]:value}));
+      console.log(data);
+     }
 
   return (
     <>
@@ -18,11 +30,11 @@ const page = () => {
          </label>
          <input onChange={(e)=>setImage(e.target.files[0])} type="file" id='image' hidden required/>
          <p className='text-xl mt-4'>Blog title</p>
-         <input className='w-full  sm:w-[500px] mt-4 px-4 py-3 border' type="text" placeholder='Type here' required />
+         <input name='title' onChange={onChangeHandler} value={data.title} className='w-full  sm:w-[500px] mt-4 px-4 py-3 border' type="text" placeholder='Type here' required />
          <p className='text-xl mt-4'>Blog Description </p>
-         <textarea className='w-full  sm:w-[500px] mt-4 px-4 py-3 border' type="text" placeholder='write content here' rows={6} required />
+         <textarea name='description' onChange={onChangeHandler} value={data.description} className='w-full  sm:w-[500px] mt-4 px-4 py-3 border' type="text" placeholder='write content here' rows={6} required />
          <p className='text-xl mt-4'>Blog category</p>
-         <select name="category"  className='w-40 mt-4 px-4 py-3 border text-gray-500' id="">
+         <select name="category" onChange={onChangeHandler} value={data.category} className='w-40 mt-4 px-4 py-3 border text-gray-500' id="">
           <option value="Viral news">Viral news</option>
           <option value="Technology">Technology</option>
           <option value="Business">Business</option>
