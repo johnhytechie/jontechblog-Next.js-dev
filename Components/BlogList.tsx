@@ -13,8 +13,8 @@ import { blog_data } from '@/Assets/assets'
        <div className='flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 my-6 md:my-10 px-3'>
 
         <button onClick={()=>setMenu('All')} className={menu==="All"? 'bg-black text-white py-1 px-4 rounded-sm':""}>All</button>
-        <button onClick={()=>setMenu('Technology')} className={menu==="Technology"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Technology</button>
         <button onClick={()=>setMenu('Viral news')} className={menu==="Viral news"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Viral news</button>
+        <button onClick={()=>setMenu('Technology')} className={menu==="Technology"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Technology</button>
         <button onClick={()=>setMenu('Business')} className={menu==="Business"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Business</button>
         <button onClick={()=>setMenu('Education')} className={menu==="Education"? 'bg-black text-white py-1 px-4 rounded-sm':""} >Education</button>
         <button onClick={()=>setMenu('Health')} className={menu==="Health"? 'bg-black text-white py-1 px-4 rounded-sm':""}>Health</button>

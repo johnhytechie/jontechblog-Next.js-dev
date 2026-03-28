@@ -64,7 +64,8 @@ export const assets = {
     arrow,
     blogicon,
     instagram,
-    trisia
+    trisia,
+    upload2
 }
 
 export const blog_data= [{
