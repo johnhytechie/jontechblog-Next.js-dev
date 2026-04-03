@@ -74,7 +74,7 @@ export const blog_data= [{
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt eveniet amet consequuntur! A expedita quo veniam neque eaque et, sequi quaerat fugiat natus esse exercitationem quibusdam quod? Nemo, repellat.",
     image:club2,
     date:Date.now(),
-    category:"Viral",
+    category:"Viral news",
     author:"Pat Chisom",
     author_img: profileicon
 },
