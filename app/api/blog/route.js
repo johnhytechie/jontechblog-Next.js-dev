@@ -5,14 +5,17 @@ import BlogModel from "@/lib/models/BlogModel";
 
 export const runtime = "nodejs";
 
+// GET API (Endpoint to get all blogs)
 export async function GET() {
-  await connectDB();   // CONNECT HERE
-  return NextResponse.json({ msg: "API Working" });
+  await connectDB();
+  const blogs = await BlogModel.find({})
+  return NextResponse.json({ blogs });
+  
 }
 
+// POST API (Endpoint for uploading Blogs)
 export async function POST(request) {
   try {
-    
     await connectDB();
 
     const formData = await request.formData();
@@ -27,15 +30,19 @@ export async function POST(request) {
       );
     }
 
-    const imageByteData = await image.arrayBuffer();
-    const buffer = Buffer.from(imageByteData);
+    // convert image
+    const bytes = await image.arrayBuffer();
+    const buffer = Buffer.from(bytes);
 
-    const path = `./public/${timestamp}_${image.name}`;
-    await writeFile(path, buffer);
+    // save image
+    const fileName = `${timestamp}_${image.name}`;
+    const filePath = `./public/${fileName}`;
 
-    const imgUrl = `/${timestamp}_${image.name}`;
-    console.log("Image URL:", imgUrl); // LOG IMAGE
+    await writeFile(filePath, buffer);
 
+    const imgUrl = `/${fileName}`;
+
+    // blog data
     const blogData = {
       title: formData.get("title"),
       description: formData.get("description"),
@@ -46,18 +53,17 @@ export async function POST(request) {
     };
 
     await BlogModel.create(blogData);
-    console.log("Blog Saved")
 
     return NextResponse.json({
       success: true,
-      msg: "Blog Added",
+      msg: "Blog Added Successfully",
     });
 
-  } catch (error) {
-    console.error(error);
+  } catch (error) { 
+    console.error("BLOG API ERROR:", error);
 
     return NextResponse.json(
-      { success: false, error: error.message },
+      { success: false, msg: error.message },
       { status: 500 }
     );
   }
