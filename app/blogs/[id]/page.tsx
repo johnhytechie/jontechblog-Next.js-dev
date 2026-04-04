@@ -12,7 +12,7 @@ const Page = ({ params }: { params: Promise<{ id: string }> }) => {
 
 const { id } = use(params)
 
-const [data, setData] = useState<any>(null)
+const [data, setData] = useState<any>(null);
 
 
 
@@ -20,16 +20,6 @@ useEffect(()=>{
 
 const fetchBlogData=()=>{
 
-for(let i=0;i<blog_data.length;i++){
-
-if(Number(id)===blog_data[i].id){
-
-setData(blog_data[i])
-break
-
-}
-
-}
 
 }
 
